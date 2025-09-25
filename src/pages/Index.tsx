@@ -1,11 +1,80 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { getZodiacSign, getDailyHoroscope, type ZodiacSign } from "@/lib/zodiac";
+import { ZodiacForm } from "@/components/ZodiacForm";
+import { ZodiacResult } from "@/components/ZodiacResult";
+import cosmicBackground from "@/assets/cosmic-background.jpg";
 
 const Index = () => {
+  const [result, setResult] = useState<{
+    name: string;
+    zodiacSign: ZodiacSign;
+    horoscope: string;
+  } | null>(null);
+
+  const handleFormSubmit = (data: { name: string; birthDate: Date }) => {
+    const zodiacSign = getZodiacSign(data.birthDate);
+    const horoscope = getDailyHoroscope(zodiacSign.name);
+    
+    setResult({
+      name: data.name,
+      zodiacSign,
+      horoscope
+    });
+  };
+
+  const handleReset = () => {
+    setResult(null);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div 
+      className="min-h-screen bg-background bg-gradient-starry relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(23, 23, 40, 0.8), rgba(23, 23, 40, 0.9)), url(${cosmicBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Animated stars overlay */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-secondary rounded-full animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-primary rounded-full animate-pulse delay-700"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-secondary rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-1 h-1 bg-primary rounded-full animate-pulse delay-500"></div>
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4 py-12">
+        {!result ? (
+          <div className="text-center space-y-12">
+            {/* Hero Section */}
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-cosmic bg-clip-text text-transparent leading-tight">
+                Cosmic Destiny
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                Unlock the secrets of your zodiac sign and discover what the stars have aligned for you today
+              </p>
+              <div className="flex items-center justify-center gap-2 text-secondary">
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium">✨ Personalized Daily Horoscope ✨</span>
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+              </div>
+            </div>
+
+            {/* Form */}
+            <ZodiacForm onSubmit={handleFormSubmit} />
+          </div>
+        ) : (
+          <div className="flex flex-col items-center space-y-8">
+            <ZodiacResult
+              name={result.name}
+              zodiacSign={result.zodiacSign}
+              horoscope={result.horoscope}
+              onReset={handleReset}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
