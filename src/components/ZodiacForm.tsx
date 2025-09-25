@@ -22,9 +22,9 @@ import {
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
-  name: z.string().min(1, "Please enter your name").max(50, "Name must be less than 50 characters"),
+  name: z.string().min(1, "Silakan masukkan nama Anda").max(50, "Nama harus kurang dari 50 karakter"),
   birthDate: z.date({
-    required_error: "Please select your birth date",
+    required_error: "Silakan pilih tanggal lahir Anda",
   }),
 });
 
@@ -49,10 +49,10 @@ export function ZodiacForm({ onSubmit }: ZodiacFormProps) {
       <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-8 shadow-card">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
-            Discover Your Cosmic Identity
+            Temukan Identitas Kosmik Anda
           </h2>
           <p className="text-muted-foreground mt-2">
-            Enter your details to reveal your zodiac sign and daily horoscope
+            Masukkan detail Anda untuk mengungkap zodiak dan ramalan harian Anda
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export function ZodiacForm({ onSubmit }: ZodiacFormProps) {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-foreground font-medium">Your Name</FormLabel>
+                  <FormLabel className="text-foreground font-medium">Nama Anda</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Enter your name"
+                      placeholder="Masukkan nama Anda"
                       {...field}
                       className="bg-input/50 border-border/50 focus:border-primary transition-colors"
                     />
@@ -81,7 +81,7 @@ export function ZodiacForm({ onSubmit }: ZodiacFormProps) {
               name="birthDate"
               render={({ field }) => (
                 <FormItem className="flex flex-col">
-                  <FormLabel className="text-foreground font-medium">Date of Birth</FormLabel>
+                  <FormLabel className="text-foreground font-medium">Tanggal Lahir</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
                       <FormControl>
@@ -95,7 +95,7 @@ export function ZodiacForm({ onSubmit }: ZodiacFormProps) {
                           {field.value ? (
                             format(field.value, "PPP")
                           ) : (
-                            <span>Pick your birth date</span>
+                            <span>Pilih tanggal lahir Anda</span>
                           )}
                           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                         </Button>
@@ -123,7 +123,7 @@ export function ZodiacForm({ onSubmit }: ZodiacFormProps) {
               type="submit" 
               className="w-full bg-gradient-cosmic hover:shadow-glow transition-all duration-300 font-semibold"
             >
-              Reveal My Cosmic Destiny ✨
+              Ungkap Takdir Kosmik Saya ✨
             </Button>
           </form>
         </Form>

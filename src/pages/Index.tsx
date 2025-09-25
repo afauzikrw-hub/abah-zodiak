@@ -50,14 +50,14 @@ const Index = () => {
             {/* Hero Section */}
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-cosmic bg-clip-text text-transparent leading-tight">
-                Cosmic Destiny
+                Takdir Kosmik
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Unlock the secrets of your zodiac sign and discover what the stars have aligned for you today
+                Buka rahasia zodiak Anda dan temukan apa yang telah diselaraskan bintang-bintang untuk Anda hari ini
               </p>
               <div className="flex items-center justify-center gap-2 text-secondary">
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">✨ Personalized Daily Horoscope ✨</span>
+                <span className="text-sm font-medium">✨ Ramalan Harian yang Dipersonalisasi ✨</span>
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
               </div>
             </div>

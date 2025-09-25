@@ -15,10 +15,10 @@ export function ZodiacResult({ name, zodiacSign, horoscope, onReset }: ZodiacRes
       {/* Header */}
       <div className="text-center">
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Hello, {name}! ✨
+          Halo, {name}! ✨
         </h2>
         <p className="text-muted-foreground">
-          Here's what the stars reveal about you
+          Inilah yang diungkap bintang-bintang tentang Anda
         </p>
       </div>
 
@@ -32,18 +32,18 @@ export function ZodiacResult({ name, zodiacSign, horoscope, onReset }: ZodiacRes
           <p className="text-secondary font-semibold mt-1">{zodiacSign.dates}</p>
           <div className="inline-flex items-center gap-2 mt-2 px-3 py-1 rounded-full bg-muted/50 border border-border/30">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium">{zodiacSign.element} Element</span>
+            <span className="text-sm font-medium">Elemen {zodiacSign.element}</span>
           </div>
         </div>
 
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-foreground mb-2">About Your Sign</h4>
+            <h4 className="font-semibold text-foreground mb-2">Tentang Zodiak Anda</h4>
             <p className="text-muted-foreground leading-relaxed">{zodiacSign.description}</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-2">Your Key Traits</h4>
+            <h4 className="font-semibold text-foreground mb-2">Sifat Utama Anda</h4>
             <div className="flex flex-wrap gap-2">
               {zodiacSign.traits.map((trait, index) => (
                 <span
@@ -61,7 +61,7 @@ export function ZodiacResult({ name, zodiacSign, horoscope, onReset }: ZodiacRes
       {/* Daily Horoscope */}
       <div className="bg-gradient-aurora/10 backdrop-blur-sm border border-secondary/30 rounded-lg p-6 shadow-card">
         <div className="text-center mb-4">
-          <h4 className="text-xl font-bold text-foreground mb-2">Today's Horoscope</h4>
+          <h4 className="text-xl font-bold text-foreground mb-2">Ramalan Hari Ini</h4>
           <div className="w-12 h-0.5 bg-gradient-aurora mx-auto rounded-full"></div>
         </div>
         <p className="text-foreground/90 leading-relaxed text-center italic">
@@ -77,7 +77,7 @@ export function ZodiacResult({ name, zodiacSign, horoscope, onReset }: ZodiacRes
           className="bg-muted/30 border-border/50 hover:bg-muted/50 transition-colors"
         >
           <RotateCcw className="h-4 w-4 mr-2" />
-          Try Another Reading
+          Coba Bacaan Lain
         </Button>
       </div>
     </div>

@@ -11,98 +11,98 @@ export const zodiacSigns: ZodiacSign[] = [
   {
     name: "Aries",
     symbol: "♈",
-    element: "Fire",
-    dates: "March 21 - April 19",
-    description: "Bold and ambitious, Aries dives headfirst into even the most challenging situations.",
-    traits: ["Courageous", "Determined", "Confident", "Enthusiastic", "Optimistic"]
+    element: "Api",
+    dates: "21 Maret - 19 April",
+    description: "Berani dan ambisius, Aries terjun langsung ke situasi yang paling menantang sekalipun.",
+    traits: ["Berani", "Tegas", "Percaya Diri", "Antusias", "Optimis"]
   },
   {
     name: "Taurus",
     symbol: "♉",
-    element: "Earth",
-    dates: "April 20 - May 20",
-    description: "Smart, ambitious, and trustworthy, Taurus is the anchor of the Zodiac.",
-    traits: ["Reliable", "Patient", "Practical", "Devoted", "Responsible"]
+    element: "Tanah",
+    dates: "20 April - 20 Mei",
+    description: "Cerdas, ambisius, dan dapat dipercaya, Taurus adalah jangkar dari Zodiak.",
+    traits: ["Dapat Diandalkan", "Sabar", "Praktis", "Setia", "Bertanggung Jawab"]
   },
   {
     name: "Gemini",
     symbol: "♊",
-    element: "Air",
-    dates: "May 21 - June 20",
-    description: "Playful and intellectually curious, Gemini is constantly juggling a variety of passions.",
-    traits: ["Gentle", "Affectionate", "Curious", "Adaptable", "Quick-witted"]
+    element: "Udara",
+    dates: "21 Mei - 20 Juni",
+    description: "Ceria dan intelektual yang penasaran, Gemini terus-menerus menyeimbangkan berbagai minat.",
+    traits: ["Lembut", "Penuh Kasih", "Penasaran", "Mudah Beradaptasi", "Cerdas"]
   },
   {
     name: "Cancer",
     symbol: "♋",
-    element: "Water",
-    dates: "June 21 - July 22",
-    description: "Intuitive, emotional, and fiercely protective, Cancer is the nurturer of the zodiac.",
-    traits: ["Tenacious", "Emotional", "Sympathetic", "Persuasive", "Imaginative"]
+    element: "Air",
+    dates: "21 Juni - 22 Juli",
+    description: "Intuitif, emosional, dan sangat protektif, Cancer adalah pengasuh dalam zodiak.",
+    traits: ["Gigih", "Emosional", "Simpatik", "Persuasif", "Imajinatif"]
   },
   {
     name: "Leo",
     symbol: "♌",
-    element: "Fire",
-    dates: "July 23 - August 22",
-    description: "Bold, intelligent, warm, and courageous, fire sign Leo is a natural leader.",
-    traits: ["Creative", "Passionate", "Generous", "Warm-hearted", "Cheerful"]
+    element: "Api",
+    dates: "23 Juli - 22 Agustus",
+    description: "Berani, cerdas, hangat, dan bernyali, Leo adalah pemimpin alami.",
+    traits: ["Kreatif", "Penuh Gairah", "Dermawan", "Baik Hati", "Ceria"]
   },
   {
     name: "Virgo",
     symbol: "♍",
-    element: "Earth",
-    dates: "August 23 - September 22",
-    description: "Logical, practical, and systematic, Virgo approaches life with careful attention to detail.",
-    traits: ["Loyal", "Analytical", "Kind", "Hardworking", "Practical"]
+    element: "Tanah",
+    dates: "23 Agustus - 22 September",
+    description: "Logis, praktis, dan sistematis, Virgo mendekati hidup dengan perhatian pada detail.",
+    traits: ["Setia", "Analitis", "Baik", "Pekerja Keras", "Praktis"]
   },
   {
     name: "Libra",
     symbol: "♎",
-    element: "Air",
-    dates: "September 23 - October 22",
-    description: "Fascinated by balance and symmetry, Libra is obsessed with creating equilibrium.",
-    traits: ["Diplomatic", "Fair-minded", "Social", "Gracious", "Cooperative"]
+    element: "Udara",
+    dates: "23 September - 22 Oktober",
+    description: "Terpesona dengan keseimbangan dan simetri, Libra terobsesi menciptakan keharmonisan.",
+    traits: ["Diplomatik", "Adil", "Sosial", "Anggun", "Kooperatif"]
   },
   {
     name: "Scorpio",
     symbol: "♏",
-    element: "Water",
-    dates: "October 23 - November 21",
-    description: "Passionate, independent, and unafraid to blaze their own trail, Scorpio is intense.",
-    traits: ["Resourceful", "Brave", "Passionate", "Stubborn", "Determined"]
+    element: "Air",
+    dates: "23 Oktober - 21 November",
+    description: "Penuh gairah, mandiri, dan tidak takut membuka jalan sendiri, Scorpio sangat intens.",
+    traits: ["Sumber Daya", "Berani", "Penuh Gairah", "Keras Kepala", "Tegas"]
   },
   {
     name: "Sagittarius",
     symbol: "♐",
-    element: "Fire",
-    dates: "November 22 - December 21",
-    description: "Curious and energetic, Sagittarius is one of the biggest travelers among all zodiac signs.",
-    traits: ["Generous", "Idealistic", "Great sense of humor", "Adventurous", "Philosophical"]
+    element: "Api",
+    dates: "22 November - 21 Desember",
+    description: "Penasaran dan berenergi, Sagittarius adalah salah satu pelancong terbesar di antara semua zodiak.",
+    traits: ["Dermawan", "Idealis", "Humoris", "Petualang", "Filosofis"]
   },
   {
     name: "Capricorn",
     symbol: "♑",
-    element: "Earth",
-    dates: "December 22 - January 19",
-    description: "Ambitious, organized, and responsible, Capricorn is the achiever of the zodiac.",
-    traits: ["Responsible", "Disciplined", "Self-control", "Good managers", "Traditional"]
+    element: "Tanah",
+    dates: "22 Desember - 19 Januari",
+    description: "Ambisius, terorganisir, dan bertanggung jawab, Capricorn adalah pencapai dalam zodiak.",
+    traits: ["Bertanggung Jawab", "Disiplin", "Kontrol Diri", "Manajer Baik", "Tradisional"]
   },
   {
     name: "Aquarius",
     symbol: "♒",
-    element: "Air",
-    dates: "January 20 - February 18",
-    description: "Independent and enigmatical, Aquarius brings forth the healing time of year.",
-    traits: ["Progressive", "Original", "Independent", "Humanitarian", "Inventive"]
+    element: "Udara",
+    dates: "20 Januari - 18 Februari",
+    description: "Mandiri dan misterius, Aquarius membawa masa penyembuhan sepanjang tahun.",
+    traits: ["Progresif", "Orisinal", "Mandiri", "Kemanusiaan", "Inventif"]
   },
   {
     name: "Pisces",
     symbol: "♓",
-    element: "Water",
-    dates: "February 19 - March 20",
-    description: "Intuitive and compassionate, Pisces are known for being emotionally sensitive and aware.",
-    traits: ["Compassionate", "Artistic", "Intuitive", "Gentle", "Wise"]
+    element: "Air",
+    dates: "19 Februari - 20 Maret",
+    description: "Intuitif dan penuh kasih, Pisces dikenal karena sensitif secara emosional dan sadar.",
+    traits: ["Penuh Kasih", "Artistik", "Intuitif", "Lembut", "Bijaksana"]
   }
 ];
 
@@ -140,64 +140,64 @@ export function getZodiacSign(birthDate: Date): ZodiacSign {
 export function getDailyHoroscope(zodiacSign: string): string {
   const horoscopes: Record<string, string[]> = {
     "Aries": [
-      "Today brings exciting new opportunities your way. Trust your instincts and take that leap of faith.",
-      "Your natural leadership will shine through today. Others will look to you for guidance and inspiration.",
-      "A burst of creative energy flows through you. Channel this into something meaningful and lasting."
+      "Hari ini membawa peluang baru yang menarik untuk Anda. Percayai insting Anda dan ambil lompatan iman itu.",
+      "Kepemimpinan alami Anda akan bersinar hari ini. Orang lain akan mencari bimbingan dan inspirasi dari Anda.",
+      "Ledakan energi kreatif mengalir melalui Anda. Salurkan ini menjadi sesuatu yang bermakna dan tahan lama."
     ],
     "Taurus": [
-      "Stability and comfort are highlighted today. Focus on building solid foundations for your future.",
-      "Your practical nature will help solve a complex problem. Trust in your methodical approach.",
-      "Beauty and harmony surround you today. Take time to appreciate the finer things in life."
+      "Stabilitas dan kenyamanan disoroti hari ini. Fokuslah membangun fondasi yang solid untuk masa depan Anda.",
+      "Sifat praktis Anda akan membantu memecahkan masalah yang kompleks. Percayai pendekatan metodis Anda.",
+      "Keindahan dan harmoni mengelilingi Anda hari ini. Luangkan waktu untuk menghargai hal-hal yang lebih baik dalam hidup."
     ],
     "Gemini": [
-      "Communication is key today. Your words have the power to inspire and connect with others.",
-      "Curiosity leads you to fascinating discoveries. Keep an open mind to new possibilities.",
-      "Social connections bring unexpected benefits. Network and engage with those around you."
+      "Komunikasi adalah kunci hari ini. Kata-kata Anda memiliki kekuatan untuk menginspirasi dan terhubung dengan orang lain.",
+      "Rasa ingin tahu mengarahkan Anda ke penemuan yang menarik. Jaga pikiran terbuka untuk kemungkinan baru.",
+      "Koneksi sosial membawa manfaat tak terduga. Berjaringlah dan berinteraksi dengan orang-orang di sekitar Anda."
     ],
     "Cancer": [
-      "Your intuition is particularly strong today. Trust those gut feelings and emotional insights.",
-      "Home and family take center stage. Nurture your closest relationships with care and attention.",
-      "Emotional healing is possible today. Allow yourself to process and release what no longer serves you."
+      "Intuisi Anda sangat kuat hari ini. Percayai perasaan batin dan wawasan emosional tersebut.",
+      "Rumah dan keluarga menjadi pusat perhatian. Rawat hubungan terdekat dengan perhatian dan kasih sayang.",
+      "Penyembuhan emosional dimungkinkan hari ini. Izinkan diri Anda memproses dan melepaskan apa yang tidak lagi berguna."
     ],
     "Leo": [
-      "Your natural charisma shines brightly today. Step into the spotlight and share your unique gifts.",
-      "Creative projects flourish under today's energy. Express yourself boldly and authentically.",
-      "Leadership opportunities present themselves. Your confidence will inspire others to follow."
+      "Karisma alami Anda bersinar terang hari ini. Masuki sorotan dan bagikan bakat unik Anda.",
+      "Proyek kreatif berkembang di bawah energi hari ini. Ekspresikan diri Anda dengan berani dan autentik.",
+      "Peluang kepemimpinan muncul. Kepercayaan diri Anda akan menginspirasi orang lain untuk mengikuti."
     ],
     "Virgo": [
-      "Attention to detail serves you well today. Your methodical approach yields excellent results.",
-      "Health and wellness deserve your focus. Small improvements can make a significant difference.",
-      "Your analytical skills help others solve important problems. Offer your expertise generously."
+      "Perhatian terhadap detail melayani Anda dengan baik hari ini. Pendekatan metodis Anda menghasilkan hasil yang luar biasa.",
+      "Kesehatan dan kebugaran layak menjadi fokus Anda. Perbaikan kecil dapat membuat perbedaan yang signifikan.",
+      "Keterampilan analitis Anda membantu orang lain memecahkan masalah penting. Tawarkan keahlian Anda dengan murah hati."
     ],
     "Libra": [
-      "Balance and harmony are achievable today. Seek middle ground in any conflicts or decisions.",
-      "Partnerships and relationships flourish. Collaborate with others for mutual benefit and growth.",
-      "Beauty and art inspire you today. Surround yourself with aesthetically pleasing environments."
+      "Keseimbangan dan harmoni dapat dicapai hari ini. Carilah jalan tengah dalam konflik atau keputusan apa pun.",
+      "Kemitraan dan hubungan berkembang. Berkolaborasi dengan orang lain untuk keuntungan dan pertumbuhan bersama.",
+      "Keindahan dan seni menginspirasi Anda hari ini. Kelilingi diri Anda dengan lingkungan yang menyenangkan secara estetika."
     ],
     "Scorpio": [
-      "Deep transformation is possible today. Embrace change and let go of what holds you back.",
-      "Your intensity and passion attract opportunities. Channel this energy into meaningful pursuits.",
-      "Hidden truths may surface today. Use your investigative nature to uncover important insights."
+      "Transformasi mendalam dimungkinkan hari ini. Terima perubahan dan lepaskan apa yang menahan Anda.",
+      "Intensitas dan gairah Anda menarik peluang. Salurkan energi ini untuk mengejar hal-hal yang bermakna.",
+      "Kebenaran tersembunyi mungkin muncul hari ini. Gunakan sifat investigatif Anda untuk mengungkap wawasan penting."
     ],
     "Sagittarius": [
-      "Adventure and exploration call to you today. Expand your horizons through new experiences.",
-      "Your optimism is contagious and uplifting to others. Share your positive outlook freely.",
-      "Learning and growth opportunities abound. Embrace knowledge from unexpected sources."
+      "Petualangan dan eksplorasi memanggil Anda hari ini. Perluas cakrawala melalui pengalaman baru.",
+      "Optimisme Anda menular dan mengangkat orang lain. Bagikan pandangan positif Anda dengan bebas.",
+      "Peluang belajar dan bertumbuh berlimpah. Terima pengetahuan dari sumber yang tidak terduga."
     ],
     "Capricorn": [
-      "Hard work and dedication pay off today. Your disciplined approach brings tangible rewards.",
-      "Authority and responsibility suit you well. Take charge of important matters with confidence.",
-      "Long-term goals come into focus. Plan strategically for sustainable success and achievement."
+      "Kerja keras dan dedikasi membuahkan hasil hari ini. Pendekatan disiplin Anda membawa hadiah yang nyata.",
+      "Otoritas dan tanggung jawab cocok untuk Anda. Ambil alih urusan penting dengan percaya diri.",
+      "Tujuan jangka panjang menjadi fokus. Rencanakan secara strategis untuk kesuksesan dan pencapaian yang berkelanjutan."
     ],
     "Aquarius": [
-      "Innovation and originality set you apart today. Your unique perspective brings valuable insights.",
-      "Humanitarian causes capture your attention. Your efforts can make a meaningful difference in the world.",
-      "Technology and progress align with your interests. Embrace new ways of doing things."
+      "Inovasi dan orisinalitas membedakan Anda hari ini. Perspektif unik Anda membawa wawasan berharga.",
+      "Perjuangan kemanusiaan menarik perhatian Anda. Upaya Anda dapat membuat perbedaan yang berarti di dunia.",
+      "Teknologi dan kemajuan sejalan dengan minat Anda. Terima cara-cara baru dalam melakukan sesuatu."
     ],
     "Pisces": [
-      "Your compassion and empathy touch many lives today. Offer healing and comfort to those in need.",
-      "Artistic and spiritual pursuits bring deep satisfaction. Connect with your innermost creativity.",
-      "Dreams and intuition guide you toward important realizations. Pay attention to subtle messages."
+      "Kasih sayang dan empati Anda menyentuh banyak kehidupan hari ini. Tawarkan penyembuhan dan kenyamanan bagi mereka yang membutuhkan.",
+      "Kegiatan artistik dan spiritual membawa kepuasan mendalam. Terhubunglah dengan kreativitas terdalam Anda.",
+      "Mimpi dan intuisi membimbing Anda menuju realisasi penting. Perhatikan pesan-pesan halus."
     ]
   };
 
