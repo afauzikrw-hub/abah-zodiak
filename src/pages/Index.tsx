@@ -3,6 +3,7 @@ import { getZodiacSign, getDailyHoroscope, type ZodiacSign } from "@/lib/zodiac"
 import { ZodiacForm } from "@/components/ZodiacForm";
 import { ZodiacResult } from "@/components/ZodiacResult";
 import cosmicBackground from "@/assets/cosmic-background.jpg";
+import fotoAni from "@/assets/foto-ani.jpg";
 
 const Index = () => {
   const [result, setResult] = useState<{
@@ -47,6 +48,18 @@ const Index = () => {
       <div className="relative z-10 container mx-auto px-4 py-12">
         {!result ? (
           <div className="text-center space-y-12">
+            {/* Profile Photo */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <img 
+                  src={fotoAni} 
+                  alt="Foto Profil" 
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary/30 shadow-glow animate-scale-in"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-cosmic opacity-20 animate-pulse"></div>
+              </div>
+            </div>
+            
             {/* Hero Section */}
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-cosmic bg-clip-text text-transparent leading-tight">
